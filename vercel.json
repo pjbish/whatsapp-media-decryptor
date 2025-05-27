@@ -7,6 +7,11 @@
       "config": {
         "distDir": "client/dist"
       }
+  "buildCommand": "npm run build",
+  "outputDirectory": "client/dist",
+  "functions": {
+    "api/decrypt.js": {
+      "runtime": "@vercel/node"
     }
   ],
   "routes": [
@@ -15,4 +20,5 @@
       "dest": "/client/dist/index.html"
     }
   ]
+  }
 }
